@@ -1,0 +1,506 @@
+	
+	body {
+		background: rgb(197,204,211) url(../images/stripes.png);
+		font-family: Helvetica;
+		margin: 0 0 0 10px;
+		padding: 0;
+		-webkit-user-select: none;
+		-webkit-text-size-adjust: none;
+		}
+
+		/* standard header on body */
+		
+		div#header + h1, ul + h1 {
+			color: rgb(76,86,108);
+			font: bold 18px Helvetica;
+			text-shadow: #fff 0 1px 0;
+			width: 800px;
+			margin: 15px 0 0 10px;  
+			}
+
+		/* standard paragraph on body */
+		
+		p, ul + p, ul.data + p + p, ul.form + p + p {
+			color: rgb(76,86,108);
+			font: 14px Helvetica;
+			text-align: center;
+			text-shadow: white 0 1px 0;
+			margin: 0 10px 17px 0;
+			}
+		
+		/* headers */
+
+		div#header {
+			background: rgb(109,133,163) url(../images/bgHeader.png) repeat-x top;
+			border-top: 1px solid rgb(205,213,223);
+			border-bottom: 1px solid rgb(46,55,68);
+			padding: 10px;
+			margin: 0 0 0 -10px;
+			min-height: 44px;
+			-webkit-box-sizing: border-box;
+			}
+
+
+				div#header h1 {
+					color: #fff;
+					font: bold 20px/30px Helvetica;
+					text-shadow: #2d3642 0 -1px 0;
+					text-align: center;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					overflow: hidden;
+					width: 49%;
+					padding: 5px 0;
+					margin: 2px 0 0 -24%;
+					position: relative;
+					top: 0;
+					left: 50%;
+					}
+
+					div#header a {
+						color: #FFF;
+						background: none;
+						font: bold 12px/30px Helvetica;
+						border-width: 0 5px;
+						margin: 0;
+						padding: 0 3px;
+						width: auto;
+						height: 30px;
+						text-shadow: rgb(46,55,68) 0 -1px 0;
+						text-overflow: ellipsis;
+						text-decoration: none;
+						white-space: nowrap;
+						position: absolute;
+						overflow: hidden;
+						top: 7px;
+						left: 730px;
+						-webkit-border-image: url(../images/toolButton.png) 0 5 0 5;
+						}
+
+						div#header #backButton {
+							left: 6px;
+							right: auto;
+							padding: 0;
+							max-width: 55px;
+							border-width: 0 8px 0 14px;
+							-webkit-border-image: url(../images/backButton.png) 0 8 0 14;
+							}
+
+
+						.Action {
+							border-width: 0 5px;
+							-webkit-border-image: url(../images/actionButton.png) 0 5 0 5;
+						}
+
+
+						
+						div#header ul {
+							margin-top: 15px;
+						}
+						
+						div#header p {
+							color: rgb(60,70,80);
+							font-weight: bold;
+							font-size: 13px;
+							text-align: center;
+							clear: both;
+							position: absolute;
+							top: 4px;
+							left: 35px;
+							right: 35px;
+							margin: 0;
+							text-shadow: #C0CBDB 0 1px 0;
+							text-overflow: ellipsis;
+							white-space: nowrap;
+							overflow: hidden;
+						}
+						
+						div.pre {
+							height: 60px;
+							}
+
+
+							div.pre h1 {
+								top: 18px !important;
+								}
+								
+							div.pre a {
+								top: 25px !important;
+								right: 6px;
+								}
+								
+							div.pre a#Backbutton {
+								left: 6px !important;
+							}	
+								
+								
+								
+		
+		
+		/***** List (base) ******/
+		
+		ul {
+			color: black;
+			background: #fff;
+			border: 1px solid #B4B4B4;
+			font: bold 17px Helvetica;
+			padding: 0;	   
+			margin: 15px 10px 17px 0;
+			-webkit-border-radius: 8px;
+			}
+		
+		
+			ul li {
+				color: #666;
+				border-top: 1px solid #B4B4B4;
+				list-style-type: none;	
+				padding: 10px 10px 10px 10px;
+				}
+				
+
+				
+				/* when you have a first LI item on any list */
+				
+				li:first-child {	
+					border-top: 0;
+					-webkit-border-top-left-radius: 8px;
+					-webkit-border-top-right-radius: 8px;
+					}
+
+				li:last-child {	
+					-webkit-border-bottom-left-radius: 8px;
+					-webkit-border-bottom-right-radius: 8px;
+					}
+					
+					
+				/* universal arrows */
+				
+				ul li.arrow {
+					background-image: url(../images/chevron.png);
+					background-position: right center;
+					background-repeat: no-repeat;
+					}
+					
+					
+				#plastic ul li.arrow, #metal ul li.arrow {
+					background-image: url(../images/chevron_dg.png);
+					background-position: right center;
+					background-repeat: no-repeat;
+					}
+					
+									
+				
+				/* universal links on list */
+				
+				ul li a, li.img a + a {
+					color: #000;
+					text-decoration: none;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					overflow: hidden;
+					display: block;
+					padding: 12px 10px 12px 10px;
+					margin: -10px;
+					-webkit-tap-highlight-color:rgba(0,0,0,0);
+				}
+				
+					ul li.img a + a {
+						margin: -10px 10px -20px -5px;
+						font-size: 17px;
+						font-weight: bold;
+					}
+					
+					ul li.img a + a + a {
+							font-size: 14px;
+							font-weight: normal;
+							margin-left: -10px;
+							margin-bottom: -10px;
+							margin-top: 0;
+						}
+						
+						
+						ul li.img a + small + a {
+							margin-left: -5px;
+						}
+						
+						
+						ul li.img a + small + a + a {
+							margin-left: -10px;
+							margin-top: -20px;
+							margin-bottom: -10px;
+							font-size: 14px;
+							font-weight: normal;
+							}
+							
+							ul li.img a + small + a + a + a {
+								margin-left: 0px !important;
+								margin-bottom: 0;
+							}
+				
+				
+					ul li a + a {
+						color: #000;
+						font: 14px Helvetica;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						overflow: hidden;
+						display: block;
+						margin: 0;
+						padding: 0;
+						}
+						
+						ul li a + a + a, ul li.img a + a + a + a, ul li.img a + small + a + a + a {
+							color: #666;
+							font: 13px Helvetica;
+							margin: 0;
+							text-overflow: ellipsis;
+							white-space: nowrap;
+							overflow: hidden;
+							display: block;
+							padding: 0;
+						}
+						
+						
+					
+		
+		
+				/* standard mini-label */
+				
+				ul li small {
+					color: #369;
+					font: 17px Helvetica;
+					text-align: right;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					overflow: hidden;
+					display: block;
+					width: 23%;
+					float: right;
+					padding: 3px 0px;
+					}
+					
+					
+					
+					ul li.arrow small {
+						padding: 0 15px;
+					}
+					
+					ul li small.counter {
+						font-size: 17px !important;
+						line-height: 13px !important;
+						font-weight: bold;
+						background: rgb(154,159,170);
+						color: #fff;
+						-webkit-border-radius: 11px;
+						padding: 4px 10px 5px 10px;
+						display: inline !important;
+						width: auto;
+						margin-top: 2px;
+					}
+					
+					
+					ul li.arrow small.counter {
+						margin-right: 15px;
+					}
+					
+					
+					
+	
+					/* resize without labels */
+					
+					ul li.arrow a {
+						width: 95%;
+						}
+					
+						/* with labels */
+						
+						ul li small + a {
+							width: 75%;
+						}
+						
+						ul li.arrow small + a {
+							width: 70%;
+						}
+						
+							
+							/* Normal lists and metal */
+
+							body#normal h4 {
+								color: #fff;
+								background: rgb(154,159,170) url(../images/bglight-lg.png) top left repeat-x;
+								border-top: 1px solid rgb(165,177,186);
+								text-shadow: #666 0 1px 0;
+								margin: 0;
+								height: 31px;
+								padding: 2px 10px;
+							}
+
+
+							body#normal, body#metal {
+								margin: 0 0;
+								width: 800px;
+								/* padding: 0; */
+								/* background-color: rgb(255,255,255); */
+							}
+
+							body#normal ul, body#metal ul, body#plastic ul {
+								-webkit-border-radius: 0;
+								margin: 0;
+								border-left: 0;
+								border-right: 0;
+								border-top: 0;
+								}
+
+
+
+								body#normal ul li {
+									font-size: 20px;
+								}
+
+									body#normal ul li small {
+										font-size: 16px;
+										line-height: 28px;
+									}
+
+									body#normal li, body#metal li {
+										-webkit-border-radius: 0;
+										}
+
+									body#normal li em {
+										font-weight: normal;
+										font-style: normal;
+										}
+
+								body#normal h4 + ul {
+									border-top: 1px solid rgb(152,158,164);
+									border-bottom: 1px solid rgb(113,125,133);
+								}
+		
+/***** FORMS *****/
+
+/* fields list */
+		
+		ul.form {
+			
+		}
+		
+			ul.form li {
+				padding: 7px 10px;
+			}
+			
+			ul.form li.error { border: 2px solid red; }			
+			ul.form li.error + li.error { border-top: 0; }
+			
+			ul.form li:hover { background: #fff; }
+		
+			ul li input[type="text"], ul li input[type="password"], ul li textarea, ul li select {
+				color: #777;
+				background: #fff url(../.png); /* this is a hack due the default input shadow that iphones uses on textfields */
+				border: 0;				
+				font: normal 17px Helvetica;
+				padding: 0;
+				display: inline-block;
+				margin-left: 0px;
+				width: 100%;
+				-webkit-appearance: textarea;
+				}
+						
+				ul li textarea {
+					height: 120px;
+					padding: 0;
+					text-indent: -2px;
+				}
+				
+				ul li select {
+					text-indent: 0px;
+					background: transparent url(../images/chevron.png) no-repeat 103% 3px;
+					-webkit-appearance: textfield;
+					margin-left: -6px;
+					width: 104%;
+				}
+				
+				ul li input[type="checkbox"], ul li input[type="radio"] {
+					margin: 0;
+					color: rgb(50,79,133);
+					padding: 10px 10px;
+					}
+				
+				ul li input[type="checkbox"]:after, ul li input[type="radio"]:after {
+					content: attr(title);
+					font: 17px Helvetica;
+					display: block;
+					width: 246px;
+					margin: -12px 0 0 17px;
+					}
+
+		
+/* All Jefe's stuff */
+
+div.chartLg {
+ height: 400px;
+ width: 800px;}
+ 
+div.chartSm {
+ height: 200px;
+ width: 800px;}
+
+table.nav {
+ margin: 0;
+ padding: 0;
+ font-size: 20px;
+ width: 800px;}
+
+td, th {
+ text-shadow: #FFFFFF 0 1px 0;
+ padding: 0;
+ text-align: center;}
+
+div.nav {
+ background: #CCCCD0 url(../images/bgCal.png) repeat-x scroll center top;}
+
+th.divStr, th.dt1Str, th.dt2Str {
+ width: 15%;
+ height: 30px;
+ font-size: 14px;}
+
+th.divIn, th.divOut, th.dtRwd, th.dtFwd {
+ width: 7%;
+ height: 30px;
+ font-size: 26px;
+ font-weight: bold;}
+
+th a {
+ color: #000000;
+ font-weight: bold;
+ text-decoration: none;
+ text-shadow: #FFFFFF 0 1px 0;}
+
+form {
+ display: inline;}
+ 
+div.title {
+ color: #fff;
+ background: rgb(154,159,170) url(../images/bglight-lg.png) top left repeat-x;
+								border-top: 1px solid rgb(165,177,186);
+								height: 31px;
+/*								text-shadow: #666 0 1px 0;
+								margin: 0;
+								
+								padding: 2px 10px; */
+	}
+	
+table.title {
+ margin: 0;
+ padding: 0;
+ width: 100%;}
+ 
+th.showHide {
+ width: 20%; 
+ text-align: left;}
+
+th.titleText {
+ width: 60%; }
+ 
+th.curVal {
+ width: 20%;
+ text-align: right; }
